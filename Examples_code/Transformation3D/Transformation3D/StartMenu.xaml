@@ -1,0 +1,24 @@
+﻿<Window x:Class="Transformation3D.StartMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     Title="Transformation3D: Start Menu" Height="390" Width="300"
+    >
+  <StackPanel Margin="10" Button.Click="StartMenuButton_Click">
+    <TextBlock FontSize="12pt" FontWeight="Bold" Margin="10,10,20,10"
+               TextAlignment="Center" TextWrapping="Wrap">
+      Chapter 9: Code Examples
+    </TextBlock>
+    <Button Margin="10,2,10,2" FontSize="11pt">Matrix3DOperation</Button>
+    <Button Margin="10,2,10,2" FontSize="11pt">Matrix3DTransforms</Button>
+    <Button Margin="10,2,10,2" FontSize="11pt">PerspectiveProjection</Button>
+    <Button Margin="10,2,10,2" FontSize="11pt">OrthographicProjection</Button>
+    <Button Margin="10,2,10,2" FontSize="11pt">ScaleTransformation</Button>
+    <Button Margin="10,2,10,2" FontSize="11pt">TranslateTransformation</Button>
+    <Button Margin="10,2,10,2" FontSize="11pt">RotateTransformation</Button>
+    <Button Margin="10,2,10,2" FontSize="11pt">MatrixTransformation</Button>
+    <Button Margin="10,2,10,2" FontSize="11pt">CombineTransformation</Button>
+
+    <Button Margin="10,2,10,2" FontSize="11pt">Close</Button>
+
+  </StackPanel>
+</Window>

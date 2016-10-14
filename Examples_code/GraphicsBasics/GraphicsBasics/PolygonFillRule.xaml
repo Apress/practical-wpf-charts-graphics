@@ -1,0 +1,18 @@
+﻿<Window x:Class="GraphicsBasics.PolygonFillRule"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="PolygonFillRule" Height="600" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="FillRule = EvenOdd:" Margin="0 0 0 5"/>
+            <Polygon Stroke="Black" Fill="LightGray" FillRule="EvenOdd" 
+                     Points="0 0,0 150,100 150,100 50,50 50,50 100,150 100,150 0"/>
+            <TextBlock Text="FillRule = NonZero:" Margin="0 10 0 5"/>
+            <Polygon Stroke="Black" Fill="LightGray" FillRule="Nonzero" 
+                     Points="0 0,0 150,100 150,100 50,50 50,50 100,150 100,150 0"/>
+            <TextBlock Text="FillRule = NonZero:" Margin="0 10 0 5"/>
+            <Polygon Stroke="Black" Fill="LightGray" FillRule="Nonzero" 
+                     Points="0 0,0 150,100 150,100 100,50 100,50 50,100 50,100 100,150 100,150 0"/>
+        </StackPanel>
+    </Grid>
+</Window>

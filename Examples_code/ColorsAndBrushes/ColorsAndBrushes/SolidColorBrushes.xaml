@@ -1,0 +1,24 @@
+﻿<Window x:Class="ColorsAndBrushes.SolidColorBrushes"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Solid Color Brushes" Height="450" Width="300">
+
+    <Canvas Margin="5">
+        <StackPanel>
+            <TextBlock Margin="0,0,0,5">Predefined Brush in the Brushes class:</TextBlock>
+            <Rectangle x:Name="rect1" Width="100" Height="30" Stroke="Blue"/>
+            <TextBlock Margin="0,10,0,5">From predefined color name in the Colors class:</TextBlock>
+            <Rectangle x:Name="rect2" Width="100" Height="30" Stroke="Blue"/>
+            <TextBlock Margin="0,10,0,5">From sRGB value in the Color structure:</TextBlock>
+            <Rectangle x:Name="rect3" Width="100" Height="30" Stroke="Blue"/>
+            <TextBlock Margin="0,10,0,5">From ScRGB value in the Color structure:</TextBlock>
+            <Rectangle x:Name="rect4" Width="100" Height="30" Stroke="Blue"/>
+            <TextBlock Margin="0,10,0,5">From Hex string using ColorConverter:</TextBlock>
+            <Rectangle x:Name="rect5" Width="100" Height="30" Stroke="Blue"/>
+            <TextBlock Margin="0,10,0,5">From ColorPickerDialog:</TextBlock>
+            <Rectangle x:Name="rect6" Width="100" Height="30" Stroke="Blue" Fill="LightBlue"/>
+            <Button Click="ChangeColor_Click" Width="100" Height="25" Content="Change Color" Margin="10"/>
+        </StackPanel>
+    </Canvas>
+</Window>
+  

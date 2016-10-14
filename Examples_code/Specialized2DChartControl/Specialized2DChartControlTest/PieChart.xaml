@@ -1,0 +1,9 @@
+﻿<Window x:Class="Specialized2DChartControlTest.PieChart"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Specialized2DChartControl;assembly=Specialized2DChartControl"
+    Title="PieChart" Height="300" Width="400">
+    <Grid x:Name="rootGrid" SizeChanged="rootGrid_SizeChanged">
+        <local:PieControl x:Name="myPieChart"/>
+    </Grid>
+</Window>

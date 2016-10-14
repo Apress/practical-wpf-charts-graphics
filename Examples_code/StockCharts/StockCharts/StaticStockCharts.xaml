@@ -1,0 +1,52 @@
+﻿<Window x:Class="StockCharts.StaticStockCharts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   Title="Static Stock Charts" Height="400" Width="400">
+
+    <Grid Name="grid1" Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="2" x:Name="tbTitle" Grid.Column="1" Grid.Row="0" 
+                RenderTransformOrigin="0.5,0.5" FontSize="14" FontWeight="Bold" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" 
+                Text="Title"/>
+
+        <TextBlock Margin="2" x:Name="tbXLabel" Grid.Column="1" Grid.Row="2" 
+               RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Text="X Axis"/>
+        <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Click="LoadFile_Click" Width="120" Height="25" Content="Load Stock File" Margin="5"/>
+            <Button Click="Close_Click" Width="120" Height="25" Content="Close" Margin="15,5,5,5"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Text="Ymin" Margin="0,5,5,5"/>
+            <TextBox x:Name="txYmin" Text="32" Width="50" TextAlignment="Center" Margin="5"/>
+            <TextBlock Text="Ymax" Margin="10,5,5,5"/>
+            <TextBox x:Name="txYmax" Text="36" Width="50" TextAlignment="Center" Margin="5"/>
+            <TextBlock Text="YTick" Margin="10,5,5,5"/>
+            <TextBox x:Name="txYTick" Text="1" Width="50" TextAlignment="Center" Margin="5"/>
+        </StackPanel>
+        
+        <TextBlock Margin="2" Name="tbYLabel" Grid.Column="0" Grid.Row="1"
+                RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Text="Y Axis">
+                <TextBlock.LayoutTransform>
+                    <RotateTransform Angle="-90"/>
+                </TextBlock.LayoutTransform>
+        </TextBlock>
+
+        <Grid  Margin="0,0,0,0" x:Name ="chartGrid" Grid.Column="1" Grid.Row="1"
+			   ClipToBounds="False" Background="Transparent" SizeChanged="chartGrid_SizeChanged" >
+        </Grid>
+        <Canvas Margin="2" Name="textCanvas" Grid.Column="1" Grid.Row="1" ClipToBounds="True">
+            <Canvas Name="chartCanvas" ClipToBounds="True"/>
+        </Canvas>
+    </Grid>
+</Window>

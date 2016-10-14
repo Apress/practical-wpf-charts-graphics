@@ -1,0 +1,50 @@
+﻿<Window x:Class="WPFOverview.XAMLOnly"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="XAMLOnly" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBlock Name="textBlock" Margin="5"
+                TextAlignment="Center" Height="30"
+                Text="{Binding ElementName=textBox,Path=Text}"/>
+            <TextBox Name="textBox" Margin="5" Width="200"
+                TextAlignment="Center" Text="Hello, WPF!"/>
+            <Button Margin="5" Width="200" 
+                Content="Change Text Color">
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="Button.Click">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation Storyboard.TargetName="textBlock"
+                                                Storyboard.TargetProperty= "(TextBlock.Foreground).(SolidColorBrush.Color)"
+                                                From="Black" To="Red" Duration="0:0:1"/>
+                                <ColorAnimation Storyboard.TargetName="textBox"
+                                                Storyboard.TargetProperty= "(TextBox.Foreground).(SolidColorBrush.Color)"
+                                                From="Black" To="Red" Duration="0:0:1"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+
+            <Button Margin="5" Width="200" 
+                Content="Change Text Size">
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="Button.Click">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetName="textBlock" 
+                                                 Storyboard.TargetProperty="FontSize"
+                                                 From="11" To="24" Duration="0:0:0.2"/>
+                                <DoubleAnimation Storyboard.TargetName="textBox" 
+                                                 Storyboard.TargetProperty="FontSize"
+                                                 From="11" To="24" Duration="0:0:0.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="GraphicsBasics.EllipseShape"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Ellipses" Height="280" Width="200">
+    <Grid>
+      <StackPanel>
+            <TextBlock Text="Ellipse:" Margin="10 10 10 5"/>
+            <Ellipse Width="150" Height="70" Fill="LightGray" Stroke="Black"/>
+            <TextBlock Text="Circle:" Margin="10 10 10 5"/>
+            <Ellipse Width="100" Height="100" Fill="LightGray" Stroke="Black"/>
+        </StackPanel>  
+    </Grid>
+</Window>

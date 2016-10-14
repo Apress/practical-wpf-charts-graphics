@@ -1,0 +1,87 @@
+﻿<Window x:Class=" GraphicsBasics.CombinedGeometryExample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Combined Geometry" Height="340" Width="300">
+
+    <Border Margin="5" BorderBrush="Black" BorderThickness="1" 
+          Background="{StaticResource MyGrayGridBrush}">
+        <Canvas Width="300" Height="340" Margin="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Margin="5 0 0 10">
+                    <TextBlock FontSize="12pt" Text="Union" Margin="40,5,5,10"/>
+                    <Path Fill ="LightBlue" Stroke="Blue">
+                        <Path.Data>
+                            <CombinedGeometry GeometryCombineMode="Union">
+                                <CombinedGeometry.Geometry1>
+                                    <EllipseGeometry Center="50,50"
+                                        RadiusX="50" RadiusY="50"/>
+                                </CombinedGeometry.Geometry1>
+                                <CombinedGeometry.Geometry2>
+                                    <EllipseGeometry Center="80,50" 
+                                        RadiusX="50" RadiusY="50"/>
+                                </CombinedGeometry.Geometry2>
+                            </CombinedGeometry>
+                        </Path.Data>
+                    </Path>
+
+                    <TextBlock FontSize="12pt" Text="Xor" Margin="45,15,5,10"/>
+                    <Path Fill ="LightBlue" Stroke="Blue">
+                        <Path.Data>
+                            <CombinedGeometry 
+                                GeometryCombineMode="Xor">
+                                <CombinedGeometry.Geometry1>
+                                    <EllipseGeometry Center="50,50"
+                                        RadiusX="50" RadiusY="50"/>
+                                </CombinedGeometry.Geometry1>
+                                <CombinedGeometry.Geometry2>
+                                    <EllipseGeometry Center="80,50"
+                                        RadiusX="50" RadiusY="50"/>
+                                </CombinedGeometry.Geometry2>
+                            </CombinedGeometry>
+                        </Path.Data>
+                    </Path>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Margin="20 0 0 0">
+                    <TextBlock FontSize="12pt" Text="Intersect" Margin="30,5,5,10"/>
+                    <Path Fill ="LightBlue" Stroke="Blue" Margin="5,0,0,0">
+                        <Path.Data>
+                            <CombinedGeometry 
+                              GeometryCombineMode="Intersect">
+                                <CombinedGeometry.Geometry1>
+                                    <EllipseGeometry Center="50,50"
+                                        RadiusX="50" RadiusY="50"/>
+                                </CombinedGeometry.Geometry1>
+                                <CombinedGeometry.Geometry2>
+                                    <EllipseGeometry Center="80,50"
+                                        RadiusX="50" RadiusY="50"/>
+                                </CombinedGeometry.Geometry2>
+                            </CombinedGeometry>
+                        </Path.Data>
+                    </Path>
+
+                    <TextBlock FontSize="12pt" Text="Exclude" Margin="35,15,5,10"/>
+                    <Path Fill ="LightBlue" Stroke="Blue" Margin="10,0,0,0">
+                        <Path.Data>
+                            <CombinedGeometry GeometryCombineMode="Exclude">
+                                <CombinedGeometry.Geometry1>
+                                    <EllipseGeometry Center="50,50"
+                                        RadiusX="50" RadiusY="50"/>
+                                </CombinedGeometry.Geometry1>
+                                <CombinedGeometry.Geometry2>
+                                    <EllipseGeometry Center="80,50"
+                                        RadiusX="50" RadiusY="50"/>
+                                </CombinedGeometry.Geometry2>
+                            </CombinedGeometry>
+                        </Path.Data>
+                    </Path>
+                </StackPanel>
+            </Grid>
+        </Canvas>
+    </Border>
+</Window>

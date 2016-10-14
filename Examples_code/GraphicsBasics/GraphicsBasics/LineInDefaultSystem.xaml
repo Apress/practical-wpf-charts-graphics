@@ -1,0 +1,17 @@
+﻿<Window x:Class="GraphicsBasics.LineInDefaultSystem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Line in Default System" Height="240" Width="220">
+    <Border BorderBrush="Black" BorderThickness="1" Height="200" Width="200">
+        <Canvas Height="200" Width="200">
+            <!--<Line X1="0" Y1="0" 
+                  X2="100" Y2="100"
+                  Stroke="Black" 
+                  StrokeThickness="2" />-->
+            <Line X1="0.5in" Y1="2.0cm" 
+                  X2="150" Y2="80pt"
+                  Stroke="Blue" 
+                  StrokeThickness="0.1cm" />
+        </Canvas>
+    </Border>
+</Window>

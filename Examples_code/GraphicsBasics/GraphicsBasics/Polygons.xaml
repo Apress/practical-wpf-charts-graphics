@@ -1,0 +1,13 @@
+﻿<Window x:Class="GraphicsBasics.Polygons"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Polygons" Height="300" Width="300">
+    <Grid>
+        <StackPanel Name="stackPanel1" Margin="10">
+            <TextBlock Text="Polygon:"/>
+            <Polygon Stroke="Black" StrokeThickness="3" Fill="LightGray" Points="0 70,60 10,110 60,160 10,210 70"/>
+            <TextBlock Text="Filled sine curve:" Margin="0 10 0 0"/>
+            <Polygon Name="polygon1" Stroke="Red" StrokeThickness="2" Fill="LightCoral"/>
+        </StackPanel>
+    </Grid>
+</Window>

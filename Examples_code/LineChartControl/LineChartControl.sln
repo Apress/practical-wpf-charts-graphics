@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineChartControl", "LineChartControl\LineChartControl.csproj", "{8CBF9A73-7038-4659-97DC-86508ABEB915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineChartControlTest", "LineChartControlTest\LineChartControlTest.csproj", "{DFBA718F-2D33-4C04-848B-17A69FC9566A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CBF9A73-7038-4659-97DC-86508ABEB915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CBF9A73-7038-4659-97DC-86508ABEB915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CBF9A73-7038-4659-97DC-86508ABEB915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CBF9A73-7038-4659-97DC-86508ABEB915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFBA718F-2D33-4C04-848B-17A69FC9566A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBA718F-2D33-4C04-848B-17A69FC9566A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBA718F-2D33-4C04-848B-17A69FC9566A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBA718F-2D33-4C04-848B-17A69FC9566A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

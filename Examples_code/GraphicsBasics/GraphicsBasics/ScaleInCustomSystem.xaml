@@ -1,0 +1,35 @@
+﻿<Window x:Class="GraphicsBasics.ScaleInCustomSystem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Scale In Custom System" Height="310" Width="260">
+    <StackPanel Height="280" Width="250">
+        <Border BorderBrush="Black" BorderThickness="1" Height="200" Width="200" Margin="20">
+            <Canvas Height="200" Width="200" ClipToBounds="True">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1" />
+                        <TranslateTransform Y="200" />
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Line X1="0" Y1="0" X2="80" Y2="80"
+                  Stroke="Black" StrokeThickness="2">
+                    <Line.RenderTransform>
+                        <ScaleTransform ScaleX="{Binding ElementName=slider,Path=Value}" 
+                                    ScaleY="{Binding ElementName=slider,Path=Value}"/>
+                    </Line.RenderTransform>
+                </Line>
+                <Rectangle Canvas.Top="100" Canvas.Left="30" Width="80" Height="40" 
+                       Stroke="DarkRed" StrokeThickness="3">
+                    <Rectangle.RenderTransform>
+                        <ScaleTransform ScaleX="{Binding ElementName=slider,Path=Value}" 
+                                    ScaleY="{Binding ElementName=slider,Path=Value}"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+            </Canvas>
+        </Border>
+        <Slider Name="slider" Minimum="0" Maximum="3" Value="1" 
+                TickPlacement="BottomRight" TickFrequency="0.2" 
+                IsSnapToTickEnabled="True"/>
+    </StackPanel>
+</Window>
+

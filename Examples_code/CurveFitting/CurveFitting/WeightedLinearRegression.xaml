@@ -1,0 +1,14 @@
+﻿<Window x:Class="CurveFitting.WeightedLinearRegression"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:chart="clr-namespace:LineChartControl;assembly=LineChartControl"
+    Title="WeightedLinearRegression" Height="320" Width="600">
+    <Grid x:Name="rootGrid" SizeChanged="rootGrid_SizeChanged">
+        <StackPanel Orientation="Horizontal">
+            <chart:LineChartControlLib x:Name="logChart" Xmin="0" Xmax="11" XTick="1" 
+                                       Title="Log Scale Plot"/>
+            <chart:LineChartControlLib x:Name="linearChart" Xmin="0" Xmax="11" XTick="1" 
+                                       Title="Linear Scale Plot"/>
+        </StackPanel>
+    </Grid>
+</Window>

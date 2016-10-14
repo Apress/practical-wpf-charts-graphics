@@ -1,0 +1,16 @@
+﻿<Window x:Class="CurveFitting.StartMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Start Menu" Height="320" Width="300">
+    <StackPanel Margin="10">
+        <TextBlock FontSize="12pt" FontWeight="Bold" Margin="10,10,20,10"
+               TextAlignment="Center" TextWrapping="Wrap">
+      Line Charts
+        </TextBlock>
+        <Button x:Name="Straightline" Click="Straightline_Click" Margin="10,2,10,2" FontSize="11pt">Straight Line Fitting</Button>
+        <Button x:Name="Linear" Click="Linear_Click" Margin="10,2,10,2" FontSize="11pt">Linear Regression Fitting</Button>
+        <Button x:Name="Polynomial" Click="Polynomial_Click" Margin="10,2,10,2" FontSize="11pt">Polynomial Fitting</Button>
+        <Button x:Name="weighted" Click="Weighted_Click" Margin="10,2,10,2" FontSize="11pt">Weighted Linear Regression</Button>
+        <Button x:Name="Close" Click="Close_Click" Margin="10,2,10,2" FontSize="11pt">Close</Button>
+    </StackPanel>
+</Window>

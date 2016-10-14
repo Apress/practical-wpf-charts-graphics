@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPFOverview.FirstWPFProgram"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="First WPF Program" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBlock Name="textBlock" Margin="5"
+                TextAlignment="Center" 
+                Text="Hello, WPF!"/>
+            <TextBox Name="textBox" Margin="5" Width="200"
+                TextAlignment="Center"
+                Text="Hello, WPF!"
+                TextChanged="OnTextChanged"/>
+            <Button Margin="5" Width="200"
+                Content="Change Text Color"
+                Click="btnChangeColor_Click"/>
+            <Button Margin="5" Width="200"
+                Content="Change Text Size"
+                Click="btnChangeSize_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
+

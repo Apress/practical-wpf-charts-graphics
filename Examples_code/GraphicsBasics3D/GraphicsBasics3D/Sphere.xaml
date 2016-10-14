@@ -1,0 +1,28 @@
+﻿<Window x:Class="GraphicsBasics3D.Sphere"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:tool3d="clr-namespace:_3DTools;assembly=3DTools"
+    Title="Sphere" Height="300" Width="300">
+
+    <Grid Margin="5">
+        <Border BorderBrush="Gray" BorderThickness="1">
+            <Viewport3D Name="myViewport">
+                <Viewport3D.Camera>
+                    <PerspectiveCamera Position="4,5,6" LookDirection="-4,-5,-6" UpDirection="0,1,0"/>
+                </Viewport3D.Camera>
+
+                <!-- Set light source: -->
+                <ModelUIElement3D>
+                    <DirectionalLight Color="White" Direction="-1,-1,-1" />
+                </ModelUIElement3D>
+
+                <!-- Add coordinate axes: -->
+                <tool3d:ScreenSpaceLines3D Points="-4,0,0 3,0,0" Color="Red"/>
+                <tool3d:ScreenSpaceLines3D Points="0,-5,0 0,3,0" Color="Green"/>
+                <tool3d:ScreenSpaceLines3D Points="0,0,-10 0,0,3" Color="Blue"/>
+
+            </Viewport3D>
+        </Border>
+    </Grid>
+</Window>
+

@@ -1,0 +1,9 @@
+﻿<Window x:Class="CurveFitting.StraightLineFit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:chart="clr-namespace:LineChartControl;assembly=LineChartControl" 
+    Title="StraightLineFit" Height="350" Width="400">
+    <Grid x:Name="rootGrid" SizeChanged="rootGrid_SizeChanged">
+        <chart:LineChartControlLib x:Name="myChart" Xmin="-1" Xmax="6" XTick="1" Ymin="1" Ymax="7" YTick="1" Title="Straight Line Fitting"/>
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="Transformation2D.StartMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StartMenu" Height="410" Width="300">
+    <StackPanel Margin="10">
+        <TextBlock FontSize="12pt" FontWeight="Bold" Margin="10,10,20,10" 
+                   TextAlignment="Center" TextWrapping="Wrap"
+                   Text="2D Transformations"/>
+        <Button x:Name="operations" Click="Operations_Click" Margin="10,2,10,2" FontSize="11pt">Matrix Operations</Button>
+        <Button x:Name="transforms" Click="Transforms_Click" Margin="10,2,10,2" FontSize="11pt">Matrix Transforms</Button>
+        <Button x:Name="normalLine" Click="NormalLine_Click" Margin="10,2,10,2" FontSize="11pt">Perpendicular Line</Button>
+        <Button x:Name="objects" Click="Objects_Click" Margin="10,2,10,2" FontSize="11pt">Object Matrix Transforms</Button>
+        <Button x:Name="scale" Click="scale_Click" Margin="10,2,10,2" FontSize="11pt">Scale Transforms</Button>
+        <Button x:Name="translate" Click="translate_Click" Margin="10,2,10,2" FontSize="11pt">Translation Transforms</Button>
+        <Button x:Name="rotate" Click="rotate_Click" Margin="10,2,10,2" FontSize="11pt">Rotation Transforms</Button>
+        <Button x:Name="skew" Click="skew_Click" Margin="10,2,10,2" FontSize="11pt">Skew Transforms</Button>
+        <Button x:Name="combine" Click="combine_Click" Margin="10,2,10,2" FontSize="11pt">Combining Transforms</Button>
+        <Button x:Name="Close" Click="Close_Click" Margin="10,2,10,2" FontSize="11pt">Close</Button>
+
+    </StackPanel>
+</Window>

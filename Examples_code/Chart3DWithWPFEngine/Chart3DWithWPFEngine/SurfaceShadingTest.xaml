@@ -1,0 +1,23 @@
+﻿<Window x:Class="Chart3DWithWPFEngine.SurfaceShadingTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Surface Shading" Height="300" Width="300">
+    
+    <Grid>
+        <Viewport3D Name="viewport">
+            <Viewport3D.Camera>
+                <PerspectiveCamera Position="6,4,4"
+                        LookDirection="-6,-4,-4"
+                        UpDirection="0,1,0"/>
+            </Viewport3D.Camera>
+
+            <ModelUIElement3D>                   
+                <Model3DGroup>
+                <AmbientLight Color="Gray"/>
+                <DirectionalLight Color="Gray" Direction="-1,0,-1"/>
+                <DirectionalLight Color="Gray" Direction="1,-1,-1"/>
+                </Model3DGroup>
+            </ModelUIElement3D>
+        </Viewport3D>
+    </Grid>
+</Window>

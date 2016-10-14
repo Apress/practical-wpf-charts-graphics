@@ -1,0 +1,36 @@
+﻿<Window x:Class="Specialized2DChartControlTest.MultipleCharts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Specialized2DChartControl;assembly=Specialized2DChartControl"
+    Title="MultipleCharts" Height="700" Width="550">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="grid1" SizeChanged="grid1_SizeChanged" Grid.Column="0" Grid.Row="0">
+            <local:StemControl x:Name="chart1"/>
+        </Grid>
+        <Grid x:Name="grid2" SizeChanged="grid2_SizeChanged" Grid.Column="1" Grid.Row="0">
+            <local:StairstepControl x:Name="chart2"/>
+        </Grid>
+        <Grid x:Name="grid3" SizeChanged="grid3_SizeChanged" Grid.Column="0" Grid.Row="1">
+            <local:AreaControl x:Name="chart3"/>
+        </Grid>
+        <Grid x:Name="grid4" SizeChanged="grid4_SizeChanged" Grid.Column="1" Grid.Row="1">
+            <local:ErrorbarsControl x:Name="chart4"/>
+        </Grid>
+        <Grid x:Name="grid5" SizeChanged="grid5_SizeChanged" Grid.Column="0" Grid.Row="2">
+            <local:BarControl x:Name="chart5"/>
+        </Grid>
+        <Grid x:Name="grid6" SizeChanged="grid6_SizeChanged" Grid.Column="1" Grid.Row="2">
+            <local:PolarControl x:Name="chart6"/>
+        </Grid>
+    </Grid>
+</Window>

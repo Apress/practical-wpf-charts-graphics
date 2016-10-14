@@ -1,0 +1,26 @@
+﻿<Window x:Class="GraphicsBasics.LineDashStyles"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Line Dash Styles" Height="150" Width="350">
+    <Grid Margin="0,10,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+            <Line X1="0" Y1="5" X2 ="150" Y2="5" Margin="5" Grid.Column="0" Grid.Row="0"
+                  Stroke="Blue" StrokeThickness="2" StrokeDashArray="5,3"/>
+            <TextBlock Grid.Column="1" Grid.Row="0" Text="StrokeDashArray = '5,3'" />
+        <Line X1="0" Y1="5" X2 ="150" Y2="5" Margin="5" Grid.Column="0" Grid.Row="1"
+                  Stroke="Blue" StrokeThickness="2" StrokeDashArray="5,1,3,2"
+              StrokeStartLineCap="Round" StrokeEndLineCap="Triangle"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="StrokeDashArray = '5,1,3,2'" />
+        <Line X1="0" Y1="5" X2 ="150" Y2="5" Margin="5" Grid.Column="0" Grid.Row="2"
+                  Stroke="Blue" StrokeThickness="2" StrokeDashArray="5,1,3"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="StrokeDashArray = '5,1,3'" />
+    </Grid>
+</Window>

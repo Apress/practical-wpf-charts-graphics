@@ -1,0 +1,15 @@
+﻿<Window x:Class="GraphicsBasics.Polylines"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Polylines" Height="340" Width="250">
+    <Grid>
+        <StackPanel Name="stackPanel1" Margin="10">
+            <TextBlock Text="Polyline:"/>
+            <Polyline Stroke="Black" StrokeThickness="3" Points="0 70,60 10,110 60,160 10,210 70"/>
+            <TextBlock Text="Closed polyline:" Margin="0 10 0 0"/>
+            <Polyline Stroke="Black" StrokeThickness="3" Points="0 70,60 10,110 60,160 10,210 70, 0 70"/>
+            <TextBlock Text="Sine curve:" Margin="0 10 0 0"/>
+            <Polyline Name="polyline1" Stroke="Red" StrokeThickness="2"/>
+        </StackPanel>
+    </Grid>
+</Window>

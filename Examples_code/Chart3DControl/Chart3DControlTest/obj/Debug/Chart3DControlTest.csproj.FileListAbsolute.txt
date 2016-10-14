@@ -1,0 +1,14 @@
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\obj\Debug\App.g.cs
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\obj\Debug\Chart3DControlTest_MarkupCompile.cache
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\bin\Debug\Chart3DControlTest.exe
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\bin\Debug\Chart3DControlTest.pdb
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\bin\Debug\Chart3DControl.dll
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\bin\Debug\Chart3DControl.pdb
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\obj\Debug\Window1.baml
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\obj\Debug\Window1.g.cs
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\obj\Debug\Chart3DControlTest.g.resources
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\obj\Debug\Chart3DControlTest.Properties.Resources.resources
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\obj\Debug\Chart3DControlTest.csproj.GenerateResource.Cache
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\obj\Debug\Chart3DControlTest.exe
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControlTest\obj\Debug\Chart3DControlTest.pdb

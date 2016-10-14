@@ -1,0 +1,11 @@
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart2DControl\Chart2DControl\bin\Debug\Chart2DControl.dll
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart2DControl\Chart2DControl\bin\Debug\Chart2DControl.pdb
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart2DControl\Chart2DControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart2DControl\Chart2DControl\obj\Debug\Chart2DControlLib.baml
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart2DControl\Chart2DControl\obj\Debug\Chart2DControlLib.g.cs
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart2DControl\Chart2DControl\obj\Debug\Chart2DControl_MarkupCompile.cache
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart2DControl\Chart2DControl\obj\Debug\Chart2DControl.g.resources
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart2DControl\Chart2DControl\obj\Debug\Chart2DControl.Properties.Resources.resources
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart2DControl\Chart2DControl\obj\Debug\Chart2DControl.csproj.GenerateResource.Cache
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart2DControl\Chart2DControl\obj\Debug\Chart2DControl.dll
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart2DControl\Chart2DControl\obj\Debug\Chart2DControl.pdb

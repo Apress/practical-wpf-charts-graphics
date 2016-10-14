@@ -1,0 +1,11 @@
+﻿<Window x:Class="ColorsAndBrushes.CustomColormapBrushes"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Custom Colormap Brushes" Width="365" Height="300">
+         <Grid  Margin="0" x:Name ="chartGrid" ClipToBounds="False" 
+                Background="Transparent" SizeChanged="chartGrid_SizeChanged">
+        <Canvas Margin="10" Name="chartCanvas" ClipToBounds="False" Background="#66CCCCCC"/>            
+    </Grid>
+</Window>
+
+

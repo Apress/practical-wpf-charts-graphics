@@ -1,0 +1,9 @@
+﻿<Window x:Class="CurveFitting.PolynomialFit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:chart="clr-namespace:LineChartControl;assembly=LineChartControl"
+    Title="PolynomialFit" Height="450" Width="500">
+    <Grid x:Name="rootGrid" SizeChanged="rootGrid_SizeChanged">
+        <chart:LineChartControlLib x:Name="myChart" Xmin="0" Xmax="6" XTick="1" Ymin="-100" Ymax="600" YTick="100" Title="Polynomial Fitting"/>
+    </Grid>
+</Window>

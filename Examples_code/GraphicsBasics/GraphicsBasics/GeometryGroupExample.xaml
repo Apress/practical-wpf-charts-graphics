@@ -1,0 +1,45 @@
+﻿<Window x:Class="GraphicsBasics.GeometryGroupExample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Geometry Group" Height="310" Width="300">
+
+    <Window.Resources>
+        <GeometryGroup x:Key="GeometryNonzero" FillRule="Nonzero">
+            <EllipseGeometry RadiusX="50" RadiusY="50" Center="65,60"/>
+            <EllipseGeometry RadiusX="30" RadiusY="30" Center="65,60"/>
+        </GeometryGroup>
+        <GeometryGroup x:Key="GeometryEvenOdd" FillRule="EvenOdd">
+            <EllipseGeometry RadiusX="50" RadiusY="50" Center="65,60"/>
+            <EllipseGeometry RadiusX="30" RadiusY="30" Center="65,60"/>
+        </GeometryGroup>
+    </Window.Resources>
+
+    <Border Margin="5" BorderBrush="Black" BorderThickness="1" 
+            Background="{StaticResource MyGrayGridBrush}">
+        <Canvas Height="310" Width="300">
+            <Grid ShowGridLines="True" Height="265">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="140"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Margin="5" Grid.Column="0">
+                    <TextBlock Text="FillRule = Nonzero" Margin="15,5,5,5"/>
+                    <Path Fill="LightBlue" Stroke="Blue" StrokeThickness="2"
+                          Data="{StaticResource GeometryNonzero}"/>
+                    <Path Fill="LightCoral" Stroke="Red" StrokeThickness="2" Canvas.Left="150"
+                          Data="{StaticResource GeometryNonzero}"/>
+                </StackPanel>
+                
+                <StackPanel Margin="5" Grid.Column="1">
+                    <TextBlock Text="FillRule = EvenOdd" Margin="15,5,5,5"/>
+                    <Path Fill="LightBlue" Stroke="Blue" StrokeThickness="2"
+                          Data="{StaticResource GeometryEvenOdd}"/>
+                    <Path Fill="LightCoral" Stroke="Red" StrokeThickness="2" Canvas.Left="150" 
+                          Data="{StaticResource GeometryEvenOdd}"/>
+                </StackPanel>
+            </Grid>
+        </Canvas>
+    </Border>
+</Window>
+

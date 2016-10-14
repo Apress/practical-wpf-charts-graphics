@@ -1,0 +1,20 @@
+﻿<Window x:Class="Chart3DNoWPFEngine.StartMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Start Menu" Height="320" Width="300"
+    >
+    <StackPanel Margin="10">
+        <TextBlock FontSize="12pt" FontWeight="Bold" Margin="10,10,20,10"
+               TextAlignment="Center" TextWrapping="Wrap">
+      Line Charts
+        </TextBlock>
+        <Button Click="Cube_Click" Margin="10,2,10,2" FontSize="11pt">Creating a Cube</Button>
+        <Button Click="Coordinates_Click" Margin="10,2,10,2" FontSize="11pt">3D Coordinate Axes</Button>
+        <Button Click="Line3D_Click" Margin="10,2,10,2" FontSize="11pt">3D Line Chart</Button>
+        <Button Click="Surface_Click" Margin="10,2,10,2" FontSize="11pt">Surface Chart</Button>
+        <Button Click="Close_Click" Margin="10,2,10,2" FontSize="11pt">Close</Button>
+
+    </StackPanel>
+</Window>
+
+

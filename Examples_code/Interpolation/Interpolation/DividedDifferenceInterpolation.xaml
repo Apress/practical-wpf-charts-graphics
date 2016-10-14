@@ -1,0 +1,11 @@
+﻿<Window x:Class="Interpolation.DividedDifferenceInterpolation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:chart="clr-namespace:LineChartControl;assembly=LineChartControl"
+    Title="DividedDifferenceInterpolation" Height="350" Width="400">
+    <Grid x:Name="rootGrid" SizeChanged="rootGrid_SizeChanged">
+        <chart:LineChartControlLib x:Name="myChart" Title="Newton Divided Difference Interpolation"
+                                   Xmin="1950" Xmax="1990" XTick="10" Ymin="140" Ymax="260" YTick="20"
+                                   XLabel="Year" YLabel="Population (Million)"/>
+    </Grid>
+</Window>

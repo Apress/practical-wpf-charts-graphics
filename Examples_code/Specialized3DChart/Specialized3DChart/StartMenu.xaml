@@ -1,0 +1,22 @@
+﻿<Window x:Class="Specialized3DChart.StartMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Start Menu" Height="350" Width="300"
+    >
+    <StackPanel Margin="10">
+        <TextBlock FontSize="12pt" FontWeight="Bold" Margin="10,10,20,10"
+               TextAlignment="Center" TextWrapping="Wrap">
+      Specialized 3D Charts
+        </TextBlock>
+        <Button Click="XYColor_Click" Margin="10,2,10,2" FontSize="11pt">XY Plane Color Chart</Button>
+        <Button Click="Contour_Click" Margin="10,2,10,2" FontSize="11pt">Contour Chart</Button>
+        <Button Click="FilledContour_Click" Margin="10,2,10,2" FontSize="11pt">Filled-Contour Chart</Button>
+        <Button Click="MeshContour_Click" Margin="10,2,10,2" FontSize="11pt">Mesh-Contour Chart</Button>
+        <Button Click="SurfaceContour_Click" Margin="10,2,10,2" FontSize="11pt">Surface-Contour Chart</Button>
+        <Button Click="SurfaceFilledContour_Click" Margin="10,2,10,2" FontSize="11pt">Surface-Filled-Contour Chart</Button>
+        <Button Click="Bar3D_Click" Margin="10,2,10,2" FontSize="11pt">3D Bar Chart</Button>
+        <Button Click="Close_Click" Margin="10,2,10,2" FontSize="11pt">Close</Button>
+    </StackPanel>
+</Window>
+
+

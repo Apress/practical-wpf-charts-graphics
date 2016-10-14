@@ -1,0 +1,11 @@
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControl\obj\Debug\Chart3DControlLib.baml
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControl\obj\Debug\Chart3DControlLib.g.cs
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControl\obj\Debug\Chart3DControl_MarkupCompile.cache
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControl\obj\Debug\Chart3DControl.g.resources
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControl\obj\Debug\Chart3DControl.Properties.Resources.resources
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControl\obj\Debug\Chart3DControl.csproj.GenerateResource.Cache
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControl\bin\Debug\Chart3DControl.dll
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControl\bin\Debug\Chart3DControl.pdb
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControl\obj\Debug\Chart3DControl.dll
+C:\Users\jack\CSharp\Books\WPF Charts\Examples\Chart3DControl\Chart3DControl\obj\Debug\Chart3DControl.pdb

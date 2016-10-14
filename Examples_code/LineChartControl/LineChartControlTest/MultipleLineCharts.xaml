@@ -1,0 +1,38 @@
+﻿<Window x:Class="LineChartControlTest.MultipleLineCharts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:LineChartControl;assembly=LineChartControl"
+    Title="Multiple Charts" Height="500" Width="500">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="grid1" SizeChanged="grid1_SizeChanged" Grid.Column="0" Grid.Row="0">
+            <local:LineChartControlLib x:Name="myLineChart1" Xmin="0" Xmax="7" XTick="1" Ymin="-1.5" Ymax="2" YTick="0.5"
+                                    Title="Chart One" GridlinePattern="Dash" GridlineColor="LightPink" />
+        </Grid>
+
+        <Grid x:Name="grid2" SizeChanged="grid2_SizeChanged" Grid.Column="1" Grid.Row="0">
+            <local:LineChartControlLib x:Name="myLineChart2" Xmin="0" Xmax="7" XTick="1" Ymin="-1.5" Ymax="2" YTick="0.5"
+                                    Title="Chart Two" GridlinePattern="Solid" GridlineColor="LightPink" />
+        </Grid>
+
+        <Grid x:Name="grid3" SizeChanged="grid3_SizeChanged" Grid.Column="0" Grid.Row="1">
+            <local:LineChartControlLib x:Name="myLineChart3" Xmin="0" Xmax="7" XTick="1" Ymin="-1.5" Ymax="2" YTick="0.5"
+                                    Title="Chart Three" GridlinePattern="Dash" GridlineColor="LightBlue" />
+        </Grid>
+
+        <Grid x:Name="grid4" SizeChanged="grid4_SizeChanged" Grid.Column="1" Grid.Row="1">
+            <local:LineChartControlLib x:Name="myLineChart4" Xmin="0" Xmax="7" XTick="1" Ymin="-1.5" Ymax="2" YTick="0.5"
+                                    Title="Chart Four" GridlinePattern="Solid" GridlineColor="LightBlue" />
+        </Grid>
+
+    </Grid>
+</Window>
+

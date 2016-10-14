@@ -1,0 +1,21 @@
+﻿<Window x:Class="LineCharts.StartMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Start Menu" Height="320" Width="300"
+    >
+  <StackPanel Margin="10" Button.Click="StartMenuButton_Click">
+    <TextBlock FontSize="12pt" FontWeight="Bold" Margin="10,10,20,10"
+               TextAlignment="Center" TextWrapping="Wrap">
+      Line Charts
+    </TextBlock>
+        <Button Margin="10,2,10,2" FontSize="11pt">SimpleLineChart</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">LineChartExample</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">LineChartWithGridlines</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">LineChartWithLegend</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">LineChartWithSymbols</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">LineChartWith2YAxes</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">Close</Button>
+
+  </StackPanel>
+</Window>
+

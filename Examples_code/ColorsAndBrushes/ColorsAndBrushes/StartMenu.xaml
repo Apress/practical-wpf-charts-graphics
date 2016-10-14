@@ -1,0 +1,21 @@
+﻿<Window x:Class="ColorsAndBrushes.StartMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   Title="Start Menu" Height="370" Width="300"
+    >
+    <StackPanel Margin="10">
+        <TextBlock FontSize="12pt" FontWeight="Bold" Margin="10,10,20,10"
+               TextAlignment="Center" TextWrapping="Wrap">
+      Line Charts
+        </TextBlock>
+        <Button Click="Color_Click"  Margin="10,2,10,2" FontSize="11pt">System Colors</Button>
+        <Button Click="ColorPicker_Click"  Margin="10,2,10,2" FontSize="11pt">Color Picker</Button>
+        <Button Click ="SolidColorBrush_Click"  Margin="10,2,10,2" FontSize="11pt">Solid Color Brushes</Button>
+        <Button Click ="LinearGradient_Click"  Margin="10,2,10,2" FontSize="11pt">Linear Gradient Brushes</Button>
+        <Button Click ="RadialGradient_Click"  Margin="10,2,10,2" FontSize="11pt">Radial Gradient Brushes</Button>
+        <Button Click ="Drawing_Click"  Margin="10,2,10,2" FontSize="11pt">Drawing Brushes</Button>
+        <Button Click="CustomBrush_Click" Margin="10,2,10,2" FontSize="11pt">Custom Colormap Brushes</Button>
+        <Button Click="CustomShading_Click" Margin="10,2,10,2" FontSize="11pt">Custom Color Shading</Button>
+        <Button Click="Close_Click" Margin="10,2,10,2" FontSize="11pt">Close</Button>
+    </StackPanel>
+</Window>

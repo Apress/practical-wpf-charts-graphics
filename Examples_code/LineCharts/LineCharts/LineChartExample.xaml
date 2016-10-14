@@ -1,0 +1,11 @@
+﻿<Window x:Class="LineCharts.LineChartExample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Line Chart Example" Height="300" Width="300">
+    <Grid  x:Name ="chartGrid" ClipToBounds="False" Background="Transparent" SizeChanged="chartGrid_SizeChanged" >
+        <Border HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Gray" 
+                BorderThickness="1" Background="White" Margin="10">
+            <Canvas  Margin="0" x:Name ="chartCanvas" ClipToBounds="True"  Background="Transparent"/>
+        </Border>
+    </Grid>
+</Window>

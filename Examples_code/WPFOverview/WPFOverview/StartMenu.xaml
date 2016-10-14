@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPFOverview.StartMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StartMenu" Height="300" Width="280">
+    <StackPanel Margin="10">
+        <TextBlock FontSize="12pt" FontWeight="Bold" Margin="10,10,20,10"
+               TextAlignment="Center" TextWrapping="Wrap" Text="WPF Overview"/>
+
+        <Button x:Name="firstWPF" Click="firstWPF_Click" Margin="10,2,10,2" FontSize="11pt">First WPF Program</Button>
+        <Button x:Name="codeOnly" Click="codeOnly_Click" Margin="10,2,10,2" FontSize="11pt">Code Only Example</Button>
+        <Button x:Name="xamlOnly" Click="xamlOnly_Click" Margin="10,2,10,2" FontSize="11pt">XAML Only Example</Button>
+        <Button x:Name="Close" Click="Close_Click" Margin="10,2,10,2" FontSize="11pt">Close</Button>
+
+    </StackPanel>
+</Window>

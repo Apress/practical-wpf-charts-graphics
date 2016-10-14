@@ -1,0 +1,51 @@
+﻿<Window x:Class="GraphicsBasics.AnimateBezierCurve"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Bezier Curve" Height="300" Width="300">
+    
+    <Viewbox Stretch="Fill">
+        <Border Margin="5" BorderBrush="Black" BorderThickness="1" 
+                Background="{StaticResource MyGrayGridBrush}"
+                HorizontalAlignment="Left">
+            <Canvas x:Name="canvas1" Width="300" Height="270">
+                <Path Stroke="Black" StrokeThickness="5">
+                    <Path.Data>
+                        <PathGeometry>
+                            <PathFigure StartPoint="20,20">
+                                <BezierSegment x:Name="bezierSegment" Point1="150,50"
+                               Point2="60,160" Point3="250,230"/>
+                            </PathFigure>
+                        </PathGeometry>
+                    </Path.Data>
+                </Path>
+                <Path x:Name="path1" Fill="Red" Stroke="Red">
+                    <Path.Data>
+                        <GeometryGroup>
+                            <LineGeometry x:Name="line1" StartPoint="20,20" EndPoint="150,50"/>
+                            <EllipseGeometry x:Name="ellipse1" Center="150,50" RadiusX="5" RadiusY="5" />
+                            <LineGeometry x:Name="line2" StartPoint="60,160" EndPoint="250,230"/>
+                            <EllipseGeometry x:Name="ellipse2" Center="60,160" RadiusX="5" RadiusY="5" />
+                        </GeometryGroup>
+                    </Path.Data>
+                </Path>
+                
+                <!-- Set animation: -->
+                <Canvas.Triggers>
+                    <EventTrigger RoutedEvent="Canvas.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard RepeatBehavior="Forever" AutoReverse="True">
+                                <PointAnimation Storyboard.TargetName="bezierSegment"                                                Storyboard.TargetProperty="Point1"                                                From="50 20" To="250 20" Duration="0:0:5"/>
+                                <PointAnimation Storyboard.TargetName="line1"                                                Storyboard.TargetProperty="EndPoint"                                                From="50 20" To="250 20" Duration="0:0:5"/>
+                                <PointAnimation Storyboard.TargetName="ellipse1"                                                Storyboard.TargetProperty="Center"                                                From="50 20" To="250 20" Duration="0:0:5"/>
+                                <PointAnimation Storyboard.TargetName="bezierSegment"                                                Storyboard.TargetProperty="Point2"                                                From="60 50" To="60 250" Duration="0:0:5"/>
+                                <PointAnimation Storyboard.TargetName="line2"                                                Storyboard.TargetProperty="StartPoint"                                                From="60 50" To="60 250" Duration="0:0:5"/>
+                                <PointAnimation Storyboard.TargetName="ellipse2"                                                Storyboard.TargetProperty="Center"                                                From="60 50" To="60 250" Duration="0:0:5"/>
+
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Canvas.Triggers>                
+            </Canvas>
+        </Border>
+    </Viewbox>
+</Window>

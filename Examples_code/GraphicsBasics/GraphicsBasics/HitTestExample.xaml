@@ -1,0 +1,20 @@
+﻿<Window x:Class="GraphicsBasics.HitTestExample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Hit Test" Height="300" Width="300">
+    
+    <Canvas x:Name="canvas1" MouseLeftButtonDown="OnMouseLeftButtonDown">
+        <Rectangle Canvas.Left="20" Canvas.Top="20" Width="100" Height="60" 
+                 Stroke="Black" Fill="LightBlue" Opacity="0.7"/>
+        <Rectangle Canvas.Left="70" Canvas.Top="50" Width="100" Height="60" 
+                 Stroke="Black" Fill="LightBlue" Opacity="0.7"/>
+        <Rectangle Canvas.Left="150" Canvas.Top="80" Width="100" Height="60" 
+                 Stroke="Black" Fill="LightBlue" Opacity="0.7"/>
+        <Rectangle Canvas.Left="20" Canvas.Top="100" Width="50" Height="50" 
+                 Stroke="Black" Fill="LightBlue" Opacity="0.7"/>
+        <Rectangle Canvas.Left="40" Canvas.Top="60" Width="50" Height="50" 
+                 Stroke="Black" Fill="LightBlue" Opacity="0.7"/>
+        <Rectangle Canvas.Left="30" Canvas.Top="130" Width="50" Height="50" 
+                 Stroke="Black" Fill="LightBlue" Opacity="0.7"/>
+    </Canvas>
+</Window>

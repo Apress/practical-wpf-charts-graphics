@@ -1,0 +1,22 @@
+﻿<Window x:Class="GraphicsBasics3D.StartMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="GraphicsBasics3D: Start Menu" Height="390" Width="300"
+    >
+    <StackPanel Margin="10" Button.Click="StartMenuButton_Click">
+        <TextBlock FontSize="12pt" FontWeight="Bold" Margin="10,10,20,10"
+               TextAlignment="Center" TextWrapping="Wrap">
+            Chapter 10: Code Examples
+        </TextBlock>
+        <Button Margin="10,2,10,2" FontSize="11pt">SimpleTriangle</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">Wireframe</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">Cube</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">Sphere</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">Cylinder</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">Cone</Button>
+        <Button Margin="10,2,10,2" FontSize="11pt">Torus</Button>
+
+        <Button Margin="10,2,10,2" FontSize="11pt">Close</Button>
+    </StackPanel>
+</Window>
+

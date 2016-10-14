@@ -1,0 +1,13 @@
+﻿<Window x:Class="StockCharts.YahooStockChart"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Yahoo Stock Charts" Height="400" Width="558">
+    <StackPanel>
+        <Image x:Name="chartImage" Width="512" Height="288" Margin="10"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBox Name="txStockSymbol" Text="IBM" Width="75" Height="25" TextAlignment="Center"/>
+            <Button Click="Update_Click" Width="100" Height="25" Content="Update" Margin="10"/>
+            <Button Click="Close_Click" Width="100" Height="25" Content="Close" Margin="10"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

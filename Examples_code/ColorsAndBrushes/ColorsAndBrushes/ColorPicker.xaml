@@ -1,0 +1,63 @@
+﻿<Window x:Class="ColorsAndBrushes.ColorPicker"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+    Title="Color Picker" Height="300" Width="300">
+
+    <DockPanel>
+        <ToolBarTray DockPanel.Dock="Left" Orientation="Vertical" IsLocked="True">
+            <ToolBar Padding="2">
+
+                <RadioButton x:Name="rbRectangle" IsChecked="True" ToolTip="Add Rectangle" Margin="3">
+                    <Rectangle Width="20" Height="12" Stroke="Blue" Fill="LightBlue"/>
+                </RadioButton>
+
+                <RadioButton x:Name="rbEllipse" IsChecked="False" ToolTip="Add Ellipse" Margin="3">
+                    <Ellipse Width="22" Height="15" Stroke="Blue" Fill="LightBlue"/>
+                </RadioButton>
+
+                <RadioButton x:Name="rbSelect" IsChecked="False" ToolTip="Select" Margin="3">
+                    <Path Stroke="Blue" Fill="LightBlue" Width="20" Height="20">
+                        <Path.Data>
+                            <PathGeometry Figures="M5,15 L 10,0 15,15 12,15 12,20 8,20 8,15Z">
+                                <PathGeometry.Transform>
+                                    <RotateTransform CenterX="10" CenterY="10" Angle="45"/>
+                                </PathGeometry.Transform>
+                            </PathGeometry>
+                        </Path.Data>
+                    </Path>
+                </RadioButton>
+
+                <RadioButton x:Name="rbDelete" IsChecked="False" ToolTip="Delete Shape" Margin="3">
+                    <Path Stroke="Blue" Fill="LightBlue" Width="20" Height="20">
+                        <Path.Data>
+                            <CombinedGeometry>
+                                <CombinedGeometry.Geometry1>
+                                    <PathGeometry Figures="M0,0 L 15,20 15,15 20,15Z"/>
+                                </CombinedGeometry.Geometry1>
+                                <CombinedGeometry.Geometry2>
+                                    <PathGeometry Figures="M20,0 L 0,15 5,15 5,20Z"/>
+                                </CombinedGeometry.Geometry2>
+                            </CombinedGeometry>
+                        </Path.Data>
+                    </Path>
+                </RadioButton>
+
+                <Separator Margin="0,10,0,10"></Separator>
+
+                <TextBlock Margin="10,3,0,0">Fill</TextBlock>
+                <Button Click="btnFill_Click" Background="Transparent">
+                    <Rectangle x:Name="rectFill" Width="20" Height="20" Stroke="Black" Fill="LightBlue"/>
+                </Button>
+
+            </ToolBar>
+        </ToolBarTray>
+
+        <Border BorderThickness="2" BorderBrush="LightBlue" Margin="5">
+            <Canvas Name="canvas1" Background="Transparent"
+                    MouseLeftButtonDown="OnMouseLeftButtonDown" 
+                    MouseMove="OnMouseMove" 
+                    MouseLeftButtonUp="OnMouseLeftButtonUp">
+            </Canvas>
+        </Border>
+    </DockPanel>
+</Window>

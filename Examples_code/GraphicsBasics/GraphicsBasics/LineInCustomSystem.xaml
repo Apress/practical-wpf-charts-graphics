@@ -1,0 +1,34 @@
+﻿<Window x:Class="GraphicsBasics.LineInCustomSystem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Line In Custom System" Height="240" Width="220">
+    <Border BorderBrush="Black" BorderThickness="1" Height="200" Width="200">
+        <Canvas Height="200" Width="200">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1" />
+                    <TranslateTransform Y="200" />
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Line X1="0" Y1="0" 
+                  X2="100" Y2="100"
+                  Stroke="Black" 
+                  StrokeThickness="2" />
+            
+            <!-- Reflect the button and text block: -->
+            <Button Canvas.Top="50" Canvas.Left="80" FontSize="15" 
+                    Foreground="Red" Content="My Button">
+                <Button.RenderTransform>
+                    <ScaleTransform ScaleY="-1"/>
+                </Button.RenderTransform>
+            </Button>
+            <TextBlock Canvas.Top="120" Canvas.Left="20" 
+                       FontSize="12pt" Foreground="Blue">
+                <Bold>My Text Block</Bold>
+                <TextBlock.RenderTransform>
+                    <ScaleTransform ScaleY="-1"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Canvas>
+    </Border>
+</Window>

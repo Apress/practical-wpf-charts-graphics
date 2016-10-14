@@ -1,0 +1,38 @@
+﻿<Window x:Class="ColorsAndBrushes.SystemColors"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="System Colors" Height="350" Width="350">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="145"/>
+            <ColumnDefinition Width="145"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="5">
+            <TextBlock Text ="Select Color" Margin="5,5,5,0"/>
+            <ListBox x:Name="listBox1" SelectionChanged="listBox1SelectionChanged" 
+               Height="100" Margin="5"/>
+            <TextBlock Text="Show selected color:" Margin="5,5,5,0"/>
+            <Rectangle x:Name="rect1" Stroke="Blue" Fill="AliceBlue" 
+                 Height="100" Width="122" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="5">
+            <TextBlock Text="Opacity:" Margin="5,5,5,0"/>
+            <TextBox Name="textBox" HorizontalAlignment="Left" TextAlignment="Center" 
+               Text="1" Width="50" Margin ="5,5,5,8"/>
+            <Separator></Separator>
+            <TextBlock FontWeight="Bold" Text="sRGB Information:" Margin="5,5,5,2"/>
+            <TextBlock Name="tbAlpha" Text="Alpha =" Margin="5,0,5,2"/>
+            <TextBlock Name="tbRed" Text="Red =" Margin="5,0,5,2"/>
+            <TextBlock Name="tbGreen" Text="Green =" Margin="5,0,5,2"/>
+            <TextBlock Name="tbBlue" Text="Blue =" Margin="5,0,5,2"/>
+            <TextBlock Name="tbRGB" Text="ARGB Hex =" Margin="5,0,5,5"/>
+            <Separator/>
+            <TextBlock FontWeight="Bold" Text="ScRGB Information:" Margin="5,5,5,2"/>
+            <TextBlock Name="tbScA" Text="ScA =" Margin="5,0,5,2"/>
+            <TextBlock Name="tbScR" Text="ScR =" Margin="5,0,5,2"/>
+            <TextBlock Name="tbScG" Text="ScG =" Margin="5,0,5,2" />
+            <TextBlock Name="tbScB" Text="ScB =" Margin="5,0,5,2"/>
+        </StackPanel>
+    </Grid>
+</Window>
